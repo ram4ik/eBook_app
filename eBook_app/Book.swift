@@ -8,7 +8,13 @@
 
 import SwiftUI
 
+
+
 struct Book: View {
+    var bookTitle: String
+    var bookAuthor: String
+    var bookImage: String
+    
     var body: some View {
         ZStack {
             VStack {
@@ -42,9 +48,9 @@ struct Book: View {
                             }.padding()
                         }
                         VStack(alignment: .leading) {
-                            Text("Crushing & Influence")
+                            Text(bookTitle)
                                 .bold()
-                            Text("Gary Venchuk")
+                            Text(bookAuthor)
                                 .opacity(0.6)
                         }.padding()
                         
@@ -56,7 +62,7 @@ struct Book: View {
                     }
                 }
             }
-            Image("book-1")
+            Image(bookImage)
                 .frame(width: 200, height: 200)
                 .offset(x: -25, y: -60)
             
@@ -68,6 +74,6 @@ struct Book: View {
 
 struct Book_Previews: PreviewProvider {
     static var previews: some View {
-        Book()
+        Book(bookTitle: "Crushing & Influence", bookAuthor: "Gary Venchuk", bookImage: "book-1")
     }
 }

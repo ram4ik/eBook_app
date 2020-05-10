@@ -35,11 +35,19 @@ struct BookView: View {
                         
                         ScrollView(.horizontal, showsIndicators: false) {
                             HStack(spacing: 35) {
-                                Book()
+                                Book(
+                                    bookTitle: "Crushing & Influence",
+                                    bookAuthor: "Gary Venchuk",
+                                    bookImage: "book-1")
                                     .padding(.leading)
-                                Book()
-                                Book()
-                                Book()
+                                Book(
+                                    bookTitle: "Top Ten Business Hacks",
+                                    bookAuthor: "Herman Joel",
+                                    bookImage: "book-2")
+                                Book(
+                                    bookTitle: "How To Win Friends & Influence",
+                                    bookAuthor: "Gary Venchuk",
+                                    bookImage: "book-3")
                             }.padding(.vertical, 55)
                             
                         }
