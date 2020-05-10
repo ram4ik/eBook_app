@@ -46,7 +46,7 @@ struct ContinueReading: View {
                     }
                 }
             }
-        }.frame(width: 380, height: 130)
+        }.frame(width: UIScreen.main.bounds.width - 20, height: 130)
     }
 }
 

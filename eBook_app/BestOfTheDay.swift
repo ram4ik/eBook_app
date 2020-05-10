@@ -61,7 +61,7 @@ struct BestOfTheDay: View {
                 .frame(width: 200, height: 200)
                 .offset(x: 120, y: -60)
             
-        }.frame(width: 380, height: 300)
+        }.frame(width: UIScreen.main.bounds.width - 20, height: 300)
     }
 }
 

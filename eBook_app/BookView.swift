@@ -78,6 +78,7 @@ struct BookView: View {
                         }.padding(.vertical, 40)
                         
                         ContinueReading()
+                            .padding(.bottom)
                     }
                 }
             }
